@@ -1,0 +1,355 @@
+#main-home{
+    width : 100% ;
+    height : 100vh ;
+    display : flex ;
+    justify-content : center ;
+    align-items : start ;
+    background: url('./images/web_banner.png') no-repeat center center/cover ;
+    position: relative;
+    overflow-y: hidden;
+}
+#main-home.app{
+    background: url('./images/appbg.jpg') no-repeat center center/cover ;
+}
+#main-home.digital{
+    background: url('./images/digi.png') no-repeat center center/cover ;
+}
+.home-texts h1{
+    color : white ;
+    font-size: 6rem;
+    margin-top: 120px;
+    transform: translateY(-200%);
+    transition: all ease 1s;
+    animation: show ease 2s forwards .5s;
+    text-align: center;
+}
+#page-intro-section{
+    display : flex ;
+    justify-content : center ;
+    align-items : center ;
+    width : 100% ;
+    padding : 100px 20px ;
+    font-weight: light;
+    font-size: 15px;
+}
+.page-intro-section{
+    max-width : 1150px ;
+    display : flex ;
+    justify-content: center;
+    align-items: start ;
+    gap : 50px ;
+    position: relative;
+    color : #333;
+}
+.page-intro-section::after{
+    content : "";
+    width : 400px ;
+    height : 400px ;
+    background-color: orange ;
+    border-radius: 50%;
+    position : absolute ;
+    top : 0;
+    left : 120px ;
+    z-index:-1;
+}
+.page-intro-section.app::after{
+    background-color: rgb(67, 212, 106) ;
+}
+.page-intro-section.digital::after{
+    background-color: #32c8c6 ;
+}
+.intro-section-text h1{
+    font-size: 3rem ;
+    color : #333;
+}
+.intro-card h2{
+    color : #333;
+    margin-bottom: 10px ;
+}
+.intro-section-text{
+    width : 35% ;
+}
+.intro-cards-section{
+    width : 65%;
+    display: grid ;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap : 1rem ;
+}
+.intro-card{
+    background-color: white ;
+    box-shadow: 2px 2px 8px rgba(172, 172, 172, 0.76);
+    padding : 25px 20px ;
+    border-radius: 10px ;
+    transform: rotate(0deg);
+    transition: all ease .5s;
+}
+#technologies-section{
+    padding: 0px 20px 100px 20px ;
+    width : 100% ;
+    display: flex ;
+    justify-content : center ;
+    align-items : center ;  
+}
+.technologies-section{
+    max-width : 1150px ;
+    display: flex ;
+    flex-direction: column ;
+}
+.technologies-section-cards{
+    display : grid ;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-gap : 1.5rem ;
+}
+.technologies-section-card{
+    display : flex ;
+    align-items: center;
+    background-color: white ;
+    box-shadow: 2px 2px 8px rgb(192, 191, 191) ;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer ;
+}
+.card-image{
+    width : 30% ;
+    height : 100% ;
+    display: flex ;
+    justify-content: center ;
+    align-items : center ;
+    background-color: #F9F9F9;
+    border-right : 1px solid rgb(203, 203, 203) ;
+}
+
+.card-text{
+    padding : 18px 20px ;
+    width : 70% ;
+    display: flex ;
+    justify-content: center ;
+    flex-direction: column ;
+    gap : 10px ;
+}
+.card-text h2{
+    font-size: 20px ;
+    color : #333; 
+}
+.card-text p{
+    font-weight: light;
+    font-size: 15px;
+    color : #333 ;
+}
+.card-image img{
+    height : 50% ;
+    width : 60% ;
+    transform: scale(1);
+    transition: all ease .5s;
+}
+.technologies-section-heading{
+    font-size: 1.7rem ;
+    color : #333 ;
+    margin-bottom: 10px ;
+}
+.technologies-section-heading-card{
+    font-weight: light;
+    font-size: 15px;
+    color : #333 ;
+}
+.technologies-section-card:hover .card-image img{
+    transform: scale(1.1);
+}
+
+.intro-card:hover{
+    transform: rotate(2deg);
+    cursor: pointer ;
+}
+#request-quote-section{
+    width : 100% ;
+    margin: 50px 0px 100px 0px;
+    padding : 100px 20px ;
+    display : flex ;
+    justify-content: center;
+    align-items: center ;
+}
+.request-quote-section{
+    display : flex ;
+    justify-content: space-between;
+    max-width : 1150px ;
+    position: relative;
+}
+.request-quote-bg-image{
+    width : 100% ;
+    height : 100% ;
+    display : flex ;
+    justify-content: center;
+    align-items: center ;
+    position: absolute ;
+    z-index : -2 ;
+}
+.request-form{
+    width : 50% ;
+    background-color: white ;
+    border-radius: 10px ;
+    box-shadow: 2px 2px 8px rgb(190, 190, 190) ;
+    height : 700px ;
+    padding : 30px ;
+}
+.request-quote-text{
+    width : 40% ;
+    transform: translateY(-7%);
+}
+.request-form h2{
+    font-size: 22px ;
+    color : #333 ;
+}
+.request-quote-text h1{
+    font-size: 3rem;
+    color : #333 ;
+}
+.request-form form{
+    margin-top: 50px ;
+    display : flex ;
+    align-items: center ;
+    flex-direction: column ;
+    gap : 40px ;
+}
+.input-box{
+    height : 35px ;
+    width : 100% ;
+    border-radius: 6px ;
+    border : none ;
+    border-bottom : 2px solid rgb(194, 194, 194) ;
+    font-size: 16px;
+    outline: none ;
+}
+textarea.input-box{
+    height : 120px ;
+}
+.request-quote-btn {
+    margin-top : 80px ;
+    border : none ;
+    background-color: #e77e1f;
+    width : 80% ;
+    padding : 10px 0px ;
+    font-weight: bolder ;
+    border-radius: 8px ;
+    color : white ;
+    position: relative;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    gap : 10px ;
+}
+.request-quote-btn:hover{
+    cursor: pointer;
+}
+.request-quote-btn img{
+    height : 20px ;
+    width : 30px ;
+}
+.request-quote-btn.deactive{
+    pointer-events: none;
+    background-color: rgb(108, 108, 108) !important;
+}
+.request-quote-btn.app{
+    background-color: #4fbd9c;
+}
+.request-quote-btn.digital{
+    background-color: #32c8c6;
+}
+@keyframes show {
+    0%{
+        transform: translateY(-200%);
+    }
+    30%{
+        transform: translateY(0%);  
+    }
+    50%{
+        transform: translateY(-20%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@media (max-width:950px) {
+    .page-intro-section{
+        flex-direction: column ;
+    }   
+    .intro-section-text{
+        width : 100% ;
+    }
+    .intro-cards-section{
+        width : 100%;
+    }
+    .intro-cards-section{
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    }
+    .home-texts h1{
+        font-size: 4rem;
+    }
+    .request-quote-section{
+        flex-direction: column-reverse;
+    }
+    .request-quote-text{
+        width : 100% ;
+    }
+    .request-form{
+        width : 100% ;
+    }
+    #request-quote-section{
+        margin: 0px;
+        padding : 50px 20px 100px 20px ;
+    }
+    .request-quote-bg-image{
+        display: none;
+    }
+
+}
+@media (max-width:535px) {
+    #main-home{
+        height : 80vh ;
+        min-height : 500px ;
+    }
+    .page-intro-section::after{
+        width : 300px ;
+        height : 300px ;
+        top : 0;
+        left : 0 ;
+    }
+    .home-texts h1{
+        font-size: 3rem;
+    }
+    .technologies-section-card{
+        flex-direction: column;
+    }
+    .card-text {
+        width : 100% ;
+    }
+    .card-image{
+        width : 100% ;
+        height : 50% ;
+        border-right : none ;
+        border-bottom : 1px solid rgb(203, 203, 203) ;
+    }
+    .technologies-section-cards{
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    }
+}
+@media (max-width:400px) {
+    .intro-section-text h1{
+        font-size: 2rem;
+    }
+    .intro-cards-section{
+        grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    }
+    .page-intro-section::after{
+        width : 200px ;
+        height : 200px ;
+    }
+    .home-texts h1{
+        font-size: 2rem;
+    }
+    .technologies-section-heading{
+        font-size: 1.2rem ;
+    }
+    .request-quote-btn{
+        width : 100% ;
+    }
+}
